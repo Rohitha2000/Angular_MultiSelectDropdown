@@ -13,7 +13,7 @@ export class CardsComponent implements OnInit {
   selectedItems:any = [];
   dropdownSettings = {};
   ngOnInit() {
-    this.initform();
+    this.initform()
     this.dropdownList = [
       { item_id: 1, item_text: 'Mumbai' },
       { item_id: 2, item_text: 'Bangaluru' },
