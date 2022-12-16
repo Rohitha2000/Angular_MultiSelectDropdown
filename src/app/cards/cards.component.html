@@ -1,0 +1,99 @@
+<hr><hr>
+<div class="container">
+    <div class="row  gy-3 my-3">
+        <div class="col-md-4 col-sm-6 col-xs-10 col-lg-3 mt-3">
+            <div class="card" >
+                <img src="assets/img1.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary ">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-10 col-lg-3 mt-3">
+            <div class="card" >
+                <img src="assets/img1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-10 col-lg-3 mt-3">
+            <div class="card" >
+                <img src="assets/img1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 col-sm-5 col-xs-10 col-lg-3 mt-3">
+            <div class="card" >
+                <img src="assets/img1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+<div class="drop-container" style="width: 40%;" >
+    <form  [formGroup]= "form">
+        <ng-multiselect-dropdown formControlName="city"
+        [placeholder]="'Enter CIty'"
+        [settings]="dropdownSettings"
+        [data]="dropdownList"
+        [(ngModel)]="selectedItems"
+        (onSelect)="onItemSelect($event)"
+        (onSelectAll)="onSelectAll($event)"
+      >
+      </ng-multiselect-dropdown>
+    </form>
+    
+</div><br><br>
+<button (click)=" onSubmit()">Submit</button>
+
+<br><br>
+<!-- Example single danger button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"><button class="btn btn-primary text-center" style=" width: 100%;">chicken</button></a>
+    <a class="dropdown-item" href="#"><button class="btn btn-primary" style="width: 100%;">Mutton</button></a>
+    <a class="dropdown-item" href="#"><button class="btn btn-primary" style="width: 100%;">Prawns</button></a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Chicken Mandi</a>
+  </div>
+</div>
+
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rem in porro, qui debitis eaque
+   distinctio quaerat? Perferendis eveniet accusamus 
+  reiciendis, nisi, suscipit, minus corrupti deleniti quod officiis quidem placeat!
+</p>
+
+<div class="cont" style="padding: 50px 50px; border: 1px solid black">
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div><br><br><br>
+
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck1">
+  <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+</div><br>

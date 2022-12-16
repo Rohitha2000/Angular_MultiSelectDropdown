@@ -1,0 +1,12 @@
+.dropdown-item:active{
+    background-color: white;
+}
+.dropdown-item{
+    width: 15rem;
+}
+.btn-group{
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
